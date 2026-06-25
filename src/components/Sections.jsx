@@ -1,8 +1,10 @@
+import SocialLinks from './SocialLinks.jsx'
+
 export default function Sections() {
   return (
     <main className="content">
       <header className="nav">
-        <span className="nav__brand">NOIR</span>
+        <span className="nav__brand">BRIGGZZY</span>
         <nav className="nav__links">
           <a href="#music">Music</a>
           <a href="#visuals">Visuals</a>
@@ -15,14 +17,8 @@ export default function Sections() {
       <section className="hero">
         <div className="hero__copy">
           <p className="eyebrow">Melodic Rap · New Single Out Now</p>
-          <h1 className="hero__title">NOIR</h1>
-          <p className="hero__sub">
-            Late-night frequencies. Cobalt light and heavy hearts.
-          </p>
-          <div className="cta-row">
-            <a className="btn btn--solid" href="#music">Listen</a>
-            <a className="btn btn--ghost" href="#shows">Tour Dates</a>
-          </div>
+          <h1 className="hero__title">BRIGGZZY</h1>
+          <SocialLinks className="socials-hero" />
         </div>
         <div className="scroll-hint">scroll</div>
       </section>
@@ -31,7 +27,7 @@ export default function Sections() {
         <p className="section-index">01 — Artist</p>
         <h2>Built in the dark, made to glow.</h2>
         <p className="lede">
-          NOIR turns the small hours into sound — melodic rap that sits
+          Briggzzy turns the small hours into sound — melodic rap that sits
           somewhere between a confession and a club. Three singles, two million
           streams, one voice you don't forget.
         </p>
@@ -53,7 +49,7 @@ export default function Sections() {
         <div className="release-card">
           <div className="release-art" />
           <div className="release-meta">
-            <span>NOIR — Blue Hour</span>
+            <span>Briggzzy — Blue Hour</span>
             <span>3:48</span>
           </div>
         </div>
@@ -91,7 +87,7 @@ export default function Sections() {
         <div className="socials">
           <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Spotify</a><a href="#">YouTube</a>
         </div>
-        <footer className="footer">© {new Date().getFullYear()} NOIR. All rights reserved.</footer>
+        <footer className="footer">© {new Date().getFullYear()} Briggzzy. All rights reserved.</footer>
       </section>
     </main>
   )
