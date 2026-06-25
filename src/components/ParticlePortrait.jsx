@@ -62,7 +62,7 @@ const fragmentShader = /* glsl */ `
   }
 `
 
-export default function ParticlePortrait({ src = '/images/artist-1.svg' }) {
+export default function ParticlePortrait({ src = `${import.meta.env.BASE_URL}images/artist-1.svg` }) {
   const points = useRef()
   const matRef = useRef()
   const { size, viewport } = useThree()
