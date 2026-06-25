@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="860" viewBox="0 0 640 860">
+  <defs>
+    <radialGradient id="key" cx="38%" cy="34%" r="70%">
+      <stop offset="0%" stop-color="#7aa2ff"/>
+      <stop offset="38%" stop-color="#2f5cff"/>
+      <stop offset="72%" stop-color="#14267a"/>
+      <stop offset="100%" stop-color="#040616"/>
+    </radialGradient>
+    <radialGradient id="rim" cx="78%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#ff7a3c" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#ff7a3c" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff7a3c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="jacket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3358e6"/>
+      <stop offset="55%" stop-color="#1b2f9c"/>
+      <stop offset="100%" stop-color="#0a1240"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="860" fill="#020308"/>
+
+  <!-- shoulders / jacket -->
+  <path d="M150 860 C150 640 210 560 320 560 C430 560 490 640 490 860 Z" fill="url(#jacket)"/>
+  <path d="M250 600 C250 560 390 560 390 600 L390 760 L250 760 Z" fill="#0c1a55" opacity="0.7"/>
+  <!-- neck -->
+  <rect x="288" y="500" width="64" height="90" rx="20" fill="#1d3aa8"/>
+  <!-- head -->
+  <ellipse cx="320" cy="380" rx="118" ry="150" fill="url(#key)"/>
+  <!-- jaw shadow -->
+  <ellipse cx="320" cy="430" rx="92" ry="92" fill="#0c1c66" opacity="0.45"/>
+  <!-- cornrow hair lines -->
+  <g stroke="#9db8ff" stroke-width="4" opacity="0.6" fill="none">
+    <path d="M240 270 C290 250 350 250 400 272"/>
+    <path d="M236 300 C290 282 352 282 404 304"/>
+    <path d="M236 332 C290 316 352 316 404 336"/>
+    <path d="M240 364 C290 350 352 350 400 366"/>
+  </g>
+  <!-- sunglasses -->
+  <g fill="#05070f">
+    <rect x="262" y="356" width="52" height="30" rx="10"/>
+    <rect x="330" y="356" width="52" height="30" rx="10"/>
+    <rect x="312" y="366" width="20" height="6"/>
+  </g>
+  <!-- rim light -->
+  <ellipse cx="320" cy="380" rx="160" ry="200" fill="url(#rim)"/>
+  <!-- highlight on cheek -->
+  <ellipse cx="276" cy="410" rx="26" ry="40" fill="#a9c2ff" opacity="0.35"/>
+</svg>
