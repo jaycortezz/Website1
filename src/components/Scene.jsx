@@ -57,7 +57,7 @@ export default function Scene() {
         <color attach="background" args={['#03040a']} />
         <fog attach="fog" args={['#03040a', 10, 26]} />
         <Suspense fallback={null}>
-          <ParticlePortrait src={`${import.meta.env.BASE_URL}images/artist-1.svg`} />
+          <ParticlePortrait src={`${import.meta.env.BASE_URL}images/hero.jpg`} />
           <Dust />
           <CameraRig />
         </Suspense>

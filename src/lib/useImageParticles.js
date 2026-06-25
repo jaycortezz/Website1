@@ -6,13 +6,24 @@ import { useEffect, useState } from 'react'
 //  - aTarget  : a dispersed galaxy-swirl layout to morph toward on scroll
 //  - aColor   : per-particle color sampled from the photo (blue-tinted)
 //  - aRandom  : per-particle noise for staggered, organic motion
-export function useImageParticles(src, { density = 3, height = 9, threshold = 0.16 } = {}) {
+export function useImageParticles(
+  src,
+  { density = 3, height = 9, threshold = 0.16, fallback = `${import.meta.env.BASE_URL}images/artist-1.svg` } = {}
+) {
   const [data, setData] = useState(null)
 
   useEffect(() => {
     let cancelled = false
     const img = new Image()
     img.crossOrigin = 'anonymous'
+
+    // If the real hero photo isn't present yet, quietly fall back to the
+    // placeholder silhouette so the page never renders an empty hero.
+    img.onerror = () => {
+      if (cancelled || img.src.endsWith(fallback)) return
+      img.src = fallback
+    }
+
     img.src = src
 
     img.onload = () => {
