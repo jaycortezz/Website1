@@ -66,7 +66,7 @@ export default function ParticlePortrait({ src = `${import.meta.env.BASE_URL}ima
   const points = useRef()
   const matRef = useRef()
   const { size, viewport } = useThree()
-  const data = useImageParticles(src, { density: 3, height: 9.5, threshold: 0.16 })
+  const data = useImageParticles(src, { density: 4, height: 9.5, threshold: 0.14 })
 
   const uniforms = useMemo(
     () => ({
